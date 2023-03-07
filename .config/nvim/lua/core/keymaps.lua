@@ -12,10 +12,14 @@ vim.g.maplocalleader = ','
 map('i', 'jk', '<Esc>')
 map('i', 'kj', '<Esc>')
 map('n', '<leader>r', ':so %<CR>')
--- save/quit commands
-map('n', '<leader>s', ':w<CR>')
-map('n', '<leader>x', ':x<CR>')
-map('n', '<leader>q', ':q<CR>')
+-- keybindings for editing commands
+map('n', '<leader>s', ':w<CR>')--save
+map('n', '<leader>x', ':x<CR>')--save and quit
+map('n', '<leader>q', ':q<CR>')--quit
+map('n', '<leader>v', '"+p')--paste from clipboard
+map('n', '<leader>c', '"+c')--copy to clipboard
+
+
 
 -- Tab switching
 map('n', '<leader>f', ':tabnext<CR>')
