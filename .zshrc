@@ -225,3 +225,5 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"

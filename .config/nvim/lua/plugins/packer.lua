@@ -17,7 +17,7 @@ return require('packer').startup(function(use)
 --  use 'arzg/vim-colors-xcode'
 --  use 'catppuccin/nvim'
   use 'projekt0n/github-nvim-theme'
-  --use 'SirVer/ultisnips'
+  use 'SirVer/ultisnips'
 
   use {
         'nvim-treesitter/nvim-treesitter',

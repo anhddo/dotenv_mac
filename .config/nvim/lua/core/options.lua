@@ -30,3 +30,4 @@ require("github-theme").setup({
   theme_style = "light",
   -- other config
 })
+vim.g.python3_host_prog='/Users/anhdo/.pyenv/versions/pyvim/bin/python'
