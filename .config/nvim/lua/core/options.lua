@@ -14,8 +14,19 @@ opt.ignorecase = true       -- Ignore case letters when search
 opt.smartcase = true        -- Ignore lowercase for the whole pattern
 opt.linebreak = true        -- Wrap on word boundary
 opt.termguicolors = true
-
+-- Tabs/indentation
 opt.expandtab = true        -- Use spaces instead of tabs
 opt.shiftwidth = 4          -- Shift 4 spaces when tab
 opt.tabstop = 4             -- 1 tab == 4 spaces
 opt.smartindent = true      -- Autoindent new lines
+--vim.api.nvim_create_autocmd("FocusLost", {
+--    pattern = "*",
+--    command = "echom FocusLost'",
+--})
+
+-- setup colorscheme Lua
+-- vim.cmd.colorscheme("xcodedark")
+require("github-theme").setup({
+  theme_style = "light",
+  -- other config
+})

@@ -1,2 +1,2 @@
-vim.g.vimtex_view_method = "/Applications/Skim.app/Contents/MacOS/Skim"
+vim.g.vimtex_view_method = "skim"
 vim.vimtex_compiler_method = "latexmk"
