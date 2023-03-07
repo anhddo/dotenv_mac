@@ -10,8 +10,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="robbyrussell"
-ZSH_THEME="agnoster"
+ZSH_THEME="robbyrussell"
+#ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -163,7 +163,7 @@ alias cd3='cd ../../..'
 alias cd4='cd ../../../..'
 alias cd5='cd ../../../../..'
 alias cdo='cd ~/Documents'
-alias docs='cd ~/Documents/docs'
+alias hmab='cd ~/Documents/anhdo_notes/hmab'
 alias cdtw='cd /Users/anh/Documents/ai-safety-challenge/tanksworld'
 alias keymap='vi /home/anhdd14/qmk_firmware/keyboards/handwired/dactyl_manuform_carbonfet/5x7/keymaps/ferris/keymap.c'
 alias qmkflash='qmk flash -kb handwired/dactyl_manuform_carbonfet/5x7 -km '
