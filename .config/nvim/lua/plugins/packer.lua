@@ -15,10 +15,13 @@ return require('packer').startup(function(use)
   use 'lervag/vimtex'
   use 'tpope/vim-fugitive'
   use 'L3MON4D3/LuaSnip'
+  use 'sbdchd/neoformat'
 --  use 'arzg/vim-colors-xcode'
 --  use 'catppuccin/nvim'
   use 'projekt0n/github-nvim-theme'
   use 'SirVer/ultisnips'
+  use 'terrortylor/nvim-comment'
+  require('nvim_comment').setup()
 
   use {
         'nvim-treesitter/nvim-treesitter',

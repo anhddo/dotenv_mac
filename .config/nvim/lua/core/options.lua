@@ -1,4 +1,5 @@
 local opt = vim.opt
+
 opt.swapfile = false                  -- Don't use swapfile
 
 -----------------------------------------------------------
@@ -19,15 +20,14 @@ opt.expandtab = true        -- Use spaces instead of tabs
 opt.shiftwidth = 4          -- Shift 4 spaces when tab
 opt.tabstop = 4             -- 1 tab == 4 spaces
 opt.smartindent = true      -- Autoindent new lines
---vim.api.nvim_create_autocmd("FocusLost", {
---    pattern = "*",
---    command = "echom FocusLost'",
---})
+vim.api.nvim_create_autocmd("FocusLost", {
+    pattern = "*",
+    callback = function()
+        vim.cmd(":wa")
+    end
+})
 
--- setup colorscheme Lua
--- vim.cmd.colorscheme("xcodedark")
 require("github-theme").setup({
   theme_style = "light",
-  -- other config
 })
 vim.g.python3_host_prog='/Users/anhdo/.pyenv/versions/pyvim/bin/python'

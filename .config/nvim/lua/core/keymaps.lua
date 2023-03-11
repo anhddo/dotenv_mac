@@ -13,11 +13,14 @@ map('i', 'jk', '<Esc>')
 map('i', 'kj', '<Esc>')
 map('n', '<leader>r', ':so %<CR>')
 -- keybindings for editing commands
-map('n', '<leader>s', ':w<CR>')--save
+map('n', '<leader>s', ':wa<CR>')--save
 map('n', '<leader>x', ':x<CR>')--save and quit
 map('n', '<leader>q', ':q<CR>')--quit
 map('n', '<leader>v', '"+p')--paste from clipboard
 map('n', '<leader>c', '"+c')--copy to clipboard
+-- split window
+map('n', '<leader>h', ':split<CR>')
+map('n', 'vv', ':vsplit<CR>')
 
 
 
@@ -35,4 +38,5 @@ map('n', '<C-h>', '<C-w>h')
 map('n', '<C-l>', '<C-w>l')            
 
 -- fzf commands
-map('n', '<C-p>', ':FZF %:p:h<CR>')
+map('n', '<C-p>', ':FZF <CR>')
+map('n', '<C-S-p>', ':FZF %:p:h<CR>')
